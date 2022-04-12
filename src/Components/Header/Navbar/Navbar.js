@@ -12,7 +12,7 @@ function Navbar() {
              alt='logo'/>
         <ul  className='nav-link'>
             <NavLink 
-                to="/kaza"
+                to="/kaza/"
                 className={({isActive}) => isActive ? "activeLink" : "link"}> Accueil                   
             </NavLink>            
             <NavLink 

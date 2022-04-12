@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 function Header() {
   const location = useLocation()
-  if(location.pathname === "/kaza") {
+  if(location.pathname === "/kaza/") {
     return (
       <>
         <header>
