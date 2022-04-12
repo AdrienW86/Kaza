@@ -1,0 +1,179 @@
+.fiche-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    margin-left: 5%;
+   
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.location-title {
+    color: rgba(255, 96, 96, 1);
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.location {
+    color: rgba(255, 96, 96, 1);
+    font-size : 18px;  
+    margin-top: 10px;
+}
+.location-owner {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.owner-name {
+    width: 93px;
+    height: 52px;
+    margin-right: 15px;
+    font-size: 18px;
+    text-align: right;
+    position: relative;
+    bottom: 5px;
+    color: rgba(255, 96, 96, 1);
+}
+.owner-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+.picture_and_stars {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 5%;   
+}
+.star {
+    display: flex;
+    justify-content: end;
+}
+.positive-star, .negative-star {
+    height: 30px;
+    width: 30px;
+}
+.tag-container {
+    margin-left: 0%;
+    display: flex;
+}
+.tag {
+    width: 115px; 
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background: rgba(255, 96, 96, 1);
+}
+.description {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between ;
+}
+.accordion-description {
+    width: 582px;
+    height: 249px; 
+    position: relative;
+    margin: 0px;
+    padding: 0  
+}   
+.accordion {
+    width: 100%;
+    display: flex;
+}
+.accordion-toggle {
+    display: flex;
+}
+.accordion-toggle-text {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 100px;  
+}
+.equipment {
+    list-style: none; 
+}
+
+@media only screen and (max-width: 760px) {
+    img.photo-lightbox {
+        width: 90%;
+        height: 255px;
+    }
+    .fiche-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .location-title {
+        font-size: 18px;
+    }
+    .info {
+        display: flex;
+    }  
+    .picture_and_stars {
+       display: flex;
+       width: 90%;
+       height: 50px;
+       margin-left: 5%;
+       position: relative;
+       top: 30px;
+    }
+    .positive-star, .negative-star {
+        height: 15px;
+        width: 15px;
+    } 
+
+    .tag {
+        width: 84px;
+        height: 22px;
+        border-radius: 5px;
+        font-size: 0.6em
+    }
+    .tag-container {
+        margin-left: 0
+    }
+
+    .location-owner {
+        display: flex;
+        justify-content: flex-end ;
+        height: 50px;
+    }
+    .owner-picture {
+        height: 32px;
+        width: 32px;
+        margin-top: 7px;
+    }
+    .owner-name {
+        font-size: 12px;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    .star {
+        display:flex;
+        justify-content: start;
+        position: relative;
+        bottom: 35px;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;  
+    }
+    .accordion-description {
+       display: flex;
+       height: auto;
+       width: auto;
+    }
+    .accordion {
+        background-color: #f7f7f7
+    }
+    .accordion-toggle {
+        height: 0px;
+    }
+    
+}

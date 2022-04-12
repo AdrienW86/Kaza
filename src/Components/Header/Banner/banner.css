@@ -1,0 +1,36 @@
+.banner-home {
+    width: 90%;
+    margin-left: 5%;
+    height: 160px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0, 1); 
+    background-size: cover;
+    background-image: url('../../../assets/banner-desktop.jpg');
+}
+.banner-text {
+   display: none;
+}
+.home-text {
+    width: 55%;
+    margin-left: 22.5%;
+    padding-top: 67px;
+    color: white;  
+}
+.home-span {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;  
+}
+@media only screen and (max-width: 760px) {
+    .banner-home {
+        background-image: url('../../../assets/banner.jpg');
+    }
+    .home-text {
+       display: none;
+    } 
+    .banner-text {
+        display: flex;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+}

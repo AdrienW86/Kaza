@@ -1,0 +1,42 @@
+.list-card {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    padding-top: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    background: rgba(246, 246, 246, 1);
+    flex: 1
+}
+.card { 
+    display: flex; 
+    height: 340px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.card:hover {
+    cursor: pointer;  
+}
+.profil-link {
+    text-decoration: none;
+    height: 340px;
+}
+.cover {
+    width: 340px;
+    height: 340px;
+    border-radius: 8px;
+}
+.card-title {
+    width: 320px;
+    height: 47px;
+    position: relative;
+    bottom: 80px;
+    color: white;
+    font-weight: 500, medium;
+    text-align: left;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.5));
+}

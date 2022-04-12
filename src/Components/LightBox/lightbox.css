@@ -1,0 +1,45 @@
+.photo-lightbox {
+    height: 415px;
+    width: 100%;
+    border-radius: 25px; 
+}
+
+.lightbox {
+    display:flex;
+    justify-content: center;
+    width: 100%;  
+}
+.prev {
+  position: relative;
+  left: 70px;
+  background: transparent;
+  border: none
+}
+.next {
+  position: relative;
+  right: 70px;
+  background: transparent;
+  border: none
+}
+.prev:hover, .next:hover {
+    cursor: pointer
+}
+.prev-svg, .next-svg {
+  height: 46.8px;
+  width: 79.2px; 
+}
+
+@media only screen and (max-width: 760px) {
+    .prev-svg, .next-svg {
+      height: 19.8px;
+      width: 11.67px; 
+    }
+    .prev {
+      position: relative;
+      left: 35px;
+    }
+    .next {
+      position: relative;
+      right: 35px;
+    }
+  }

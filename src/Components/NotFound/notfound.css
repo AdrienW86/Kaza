@@ -1,0 +1,19 @@
+.not-found, .warning, .home-return {
+    color: rgba(255,96,96,1);
+    text-align: center;
+}
+
+.not-found-text {
+    font-size: 10em;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.warning {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.home-return {
+    margin-top: 140px;
+}

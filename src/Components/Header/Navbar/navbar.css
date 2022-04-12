@@ -1,0 +1,39 @@
+.nav {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.nav-link {
+    display: flex;
+}
+
+.link, .activeLink {
+    margin-left: 30px;
+    text-decoration: none;
+    color: red;
+}
+
+.logo {
+    height: 68px;
+    width: 210.32px;
+}
+
+.link:hover, .activeLink:hover {
+    cursor: pointer;
+}
+
+.activeLink {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .logo {
+        height: 47px;
+        width: 145px;
+    }
+}
