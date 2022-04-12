@@ -1,14 +1,24 @@
 {
   "files": {
-    "main.css": "/kaza/static/css/main.073c9b0a.css",
-    "main.js": "/kaza/static/js/main.3c5e4158.js",
-    "static/media/logo.svg": "/kaza/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/kaza/static/css/main.5de95e47.css",
+    "main.js": "/kaza/static/js/main.04248338.js",
+    "static/media/propos-banner.png": "/kaza/static/media/propos-banner.0c5ab2744fc9b4531788.png",
+    "static/media/banner-desktop.jpg": "/kaza/static/media/banner-desktop.f14f9d0f3cb1fbd80f48.jpg",
+    "static/media/banner.jpg": "/kaza/static/media/banner.50435afb0c9b28aa2d49.jpg",
+    "static/media/logo-white.svg": "/kaza/static/media/logo-white.e5f5cf2202cf032f8241c0c09ffbe58b.svg",
+    "static/media/logo.svg": "/kaza/static/media/logo.49c612c6c37d5bc000c6a65373bd1051.svg",
     "index.html": "/kaza/index.html",
-    "main.073c9b0a.css.map": "/kaza/static/css/main.073c9b0a.css.map",
-    "main.3c5e4158.js.map": "/kaza/static/js/main.3c5e4158.js.map"
+    "static/media/chevron-up.svg": "/kaza/static/media/chevron-up.14d83be49b513523af1b2f7dc02fbe0d.svg",
+    "static/media/chevron-down.svg": "/kaza/static/media/chevron-down.321e0a236e89303872fe07d2244cfe23.svg",
+    "static/media/chevron-right.svg": "/kaza/static/media/chevron-right.9abdc481f659ef549aed368b5ad6ce71.svg",
+    "static/media/chevron-left.svg": "/kaza/static/media/chevron-left.3060b91b1089d858005b783dedce6b87.svg",
+    "static/media/negative-star.svg": "/kaza/static/media/negative-star.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/positive-star.svg": "/kaza/static/media/positive-star.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.5de95e47.css.map": "/kaza/static/css/main.5de95e47.css.map",
+    "main.04248338.js.map": "/kaza/static/js/main.04248338.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3c5e4158.js"
+    "static/css/main.5de95e47.css",
+    "static/js/main.04248338.js"
   ]
 }
