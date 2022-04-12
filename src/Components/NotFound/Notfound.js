@@ -11,7 +11,7 @@ function Notfound() {
         <main>
           <p className='not-found-text'> 404</p>
           <p className='warning'> Oups! La page que vous demandez n'exsite pas.</p>
-          <Link className='home-return' to="/">
+          <Link className='home-return' to="/kaza">
              Retourner sur la page d'accueil
           </Link> 
         </main>
@@ -19,5 +19,4 @@ function Notfound() {
     </div>
   )
 }
-
 export default Notfound
