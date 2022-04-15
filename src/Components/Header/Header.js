@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar';
 import BannerHome from './Banner/Banner';
 import BannerPropos from './BannerPropos/BannerPropos';
 import { useLocation } from 'react-router-dom';
+import "./header.css";
 
 function Header() {
   const location = useLocation()

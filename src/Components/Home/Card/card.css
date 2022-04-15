@@ -1,42 +1,74 @@
 .list-card {
     display: flex;
     flex-flow: wrap;
-    width: 100%;
+    width: 1240px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     border-radius: 10px;
     justify-content: center;
     background: rgba(246, 246, 246, 1);
-    flex: 1
+    flex: 1;
+    max-width: 1600px
+}
+.profil-link {
+    height: 340px;
+    width: 340px;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 .card { 
-    display: flex; 
     height: 340px;
-    margin: 20px;
-    border-radius: 8px;
+    width: 340px;
 }
 .card:hover {
     cursor: pointer;  
 }
-.profil-link {
-    text-decoration: none;
-    height: 340px;
-}
 .cover {
     width: 340px;
     height: 340px;
+    opacity: 0.5;
     border-radius: 8px;
+    background-size: cover;  
 }
 .card-title {
-    width: 320px;
-    height: 47px;
+    width: 200px;
+    height: 52px;
+    display: flex;  
+    color: white;
     position: relative;
     bottom: 80px;
-    color: white;
+    left: 10px;
     font-weight: 500, medium;
     text-align: left;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px; 
-    padding-right: 10px;
-    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.5));
+    border-radius: 10px;   
+}
+
+@media only screen and (max-width: 760px) {
+    .list-card {
+        display: flex;
+        justify-content: center;
+        background: none;  
+        padding-top: 0px;
+    }
+    .card {
+        width: 335px;
+        height: 255px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .cover {
+        width: 335px;
+        height: 255px;
+    }
+    .card-title {
+        display: inline-flex;
+        flex-direction: flex-end;    
+        height: 43px; 
+        margin: 0px;      
+        border-radius: 8px;
+    }
 }

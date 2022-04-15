@@ -30,31 +30,28 @@ function Lightbox(props) {
         if(images.length > 1) {
             lengthImages = true
         }
-    console.log(lengthImages)
   return (
     <>
-    <section className='lightbox'>
+    <section className='lightbox-container'>
         <button
             onClick={prev} 
             className= {lengthImages ? 'prev' : 'hidden'}>
-            <img className='prev-svg'
-                 src={ChevronLeft} 
-                 alt="previous"
-            />
+                <img className='prev-svg'
+                     src={ChevronLeft} 
+                     alt="previous"
+                />
         </button>
-            <img className='photo-lightbox'                        
-                 src={images[current]}               
-                 alt='lightbox'
-            />   
+        <img className='lightbox'
+             src={images[current]} alt="photographie"
+        />
         <button 
             onClick={next} 
             className= {lengthImages ? 'next' : 'hidden'}>
-            <img className='next-svg'  
-                 src={ChevronRight} 
-                 alt="next">
-            </img> 
-        </button> 
-                             
+                <img className='next-svg'  
+                     src={ChevronRight} 
+                     alt="next">
+                </img> 
+        </button>                         
     </section>
     <div className='number-picture'> {currentNumber}/{images.length}</div>
     </>

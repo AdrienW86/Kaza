@@ -24,5 +24,4 @@ function Navbar() {
     </>
   )
 }
-console.log()
 export default Navbar

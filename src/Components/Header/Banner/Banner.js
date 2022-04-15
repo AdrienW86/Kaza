@@ -1,21 +1,19 @@
 import React from 'react';
-import BigText from '../../../assets/big-text.png'
-import Text from '../../../assets/text.png'
+
+
 import './banner.css'
 
 function Banner() {
   return (
     <>
-      <section className= "banner-home" >   
-        
-          <img className='home-text' 
-               src= {BigText}
-                      alt='text ' /> 
-          <img className="banner-text"
-               src= {Text}
-               alt="description" />
+      <section className= "banner-home" > 
+        <div className='home-text'></div>
+        <h1 className='title'>Chez vous, partout et ailleurs</h1>
+        <div className="banner-text">    
+          <p>Chez vous, <br></br> partout et ailleurs</p>
+        </div>
+      </section>  
       
-      </section>
     </>
   )
 }

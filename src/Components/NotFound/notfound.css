@@ -2,18 +2,47 @@
     color: rgba(255,96,96,1);
     text-align: center;
 }
-
-.not-found-text {
-    font-size: 10em;
-    margin-top: 0px;
-    margin-bottom: 30px;
+.not-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
+.not-found-text {
+    font-size: 288px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
 .warning {
     margin-top: 0;
-    font-size: 2em;
+    font-size: 36px;
+}
+.home-return {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.jump {
+    display: none;
 }
 
-.home-return {
-    margin-top: 140px;
+@media only screen and (max-width: 760px) {
+    .not-found-text {
+        font-size: 96px;
+        margin-top: 70px;
+        
+    }
+    .warning {
+        font-size: 18px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-return {
+        margin-bottom: 70px;
+    }
+    .jump {
+        display:block
+    }
 }

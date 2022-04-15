@@ -4,16 +4,16 @@ import './card.css';
 
 function Card(props) {
   return (  
-    <div className='card'>               
+             
     <Link 
       className='profil-link' 
       to={`/fiche/${props.id}/`}
-    >                 
-      <img className='cover' src={props.cover} alt="cover"/>
-      <h3 className='card-title'>{props.title}</h3> 
-    </Link> 
-    </div>
-                                                   
+    >   
+      <div className='card'>
+        <img className='cover' src={props.cover} alt="cover"/>
+        <h3 className='card-title'>{props.title}</h3> 
+      </div>  
+    </Link>                                                
   )
 }
 export default Card

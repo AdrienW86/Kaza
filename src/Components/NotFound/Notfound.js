@@ -9,11 +9,13 @@ function Notfound() {
     <div className='not-found'>
       <Header/>
         <main>
-          <p className='not-found-text'> 404</p>
-          <p className='warning'> Oups! La page que vous demandez n'exsite pas.</p>
-          <Link className='home-return' to="/kaza/">
-             Retourner sur la page d'accueil
-          </Link> 
+          <div className='not-container'>
+            <p className='not-found-text'> 404</p>
+            <p className='warning'> Oups! La page que <br className='jump'></br>vous demandez n'exsite pas.</p>
+            <Link className='home-return' to="/kaza/">
+              Retourner sur la page d'accueil
+            </Link>
+            </div>
         </main>
       <Footer/>
     </div>

@@ -27,50 +27,60 @@ function Fiche() {
   return (
     <>
       <Navbar/>
+      <main>
         <Lightbox images = {itemData.pictures}></Lightbox>
         <section className='fiche-container'>
-          <section className='info'>
-            <div>
-              <h3 className='location-title'> {itemData.title} </h3>
+          <section className='fiche'>
+            <section className='info'>
+              <div>
+                <h3 className='location-title'> {itemData.title} </h3>
                 <h4 className='location'> {itemData.location} </h4>
-            </div>
-            <div className='tag-container'>
-              {itemData.tags.map((tag, index) => {
-                return <div key={index} className='tag'> {tag}</div>
-              })}      
-            </div>     
-          </section>
-          <section className='picture_and_stars'>
-            <div className='star'> 
-              {ranking.map((rank, index) => {
-                return <div key ={index}> {rank}</div>
-              })}
-              {badRanking.map((rank, index) => {
-                return <div key ={index}> {rank}</div>
-              })}
-            </div>
-            <div className='location-owner'>
-              <p className='owner-name'> { itemData.host.name} </p>
-              <img className='owner-picture' src={ itemData.host.picture} alt="owner"/>       
-            </div> 
-          </section>
-        </section>
-      <section className='description'>
+              </div>
+              <div className='tag-container'>
+                {itemData.tags.map((tag, index) => {
+                  return <div key={index} className='tag'> {tag}</div>
+                })}      
+              </div>     
+            </section>
+            <section className='picture_and_stars'>
+              <div className='star'> 
+                {ranking.map((rank, index) => {
+                  return <div key ={index}> {rank}</div>
+                })}
+                {badRanking.map((rank, index) => {
+                  return <div key ={index}> {rank}</div>
+                })}
+              </div>
+              <div className='location-owner'>
+                <p className='owner-name'> { itemData.host.name} </p>
+                <img className='owner-picture' src={ itemData.host.picture} alt="owner"/>       
+              </div> 
+            </section>
+          </section>       
+        <section className='description'>
         <div className='accordion-description'>
-          <Accordion 
-            title={"Description"}
-            txt={itemData.description}
+          <Accordion class = {"accordion-fiche"}
+                     custom = {"fiche-accordion-title"}
+                     animated = {"fiche-animated"}
+                     toggle = {"fiche-toggle"}
+                     title={"Description"}
+                     txt={itemData.description}
           />
         </div>   
         <div className='accordion-description'>
-          <Accordion 
-            title={"Equipements"}
-            txt={itemData.equipments.map((equipment,index) => {
+          <Accordion class = {"accordion-fiche"}
+                     custom = {"fiche-accordion-title"}
+                     animated = {"fiche-animated"}
+                     toggle = {"fiche-toggle"}
+                     title={"Equipements"}
+                     txt={itemData.equipments.map((equipment,index) => {
               return <li key={index} className='equipment'>{equipment}</li>
             })}
           />
         </div> 
-      </section>   
+      </section> 
+      </section> 
+      </main>
       <Footer/>
     </>
   )
