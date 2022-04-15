@@ -18,15 +18,12 @@
     background: rgb(0, 0, 0);
     mix-blend-mode: darken;   
 }
-.accordion-propos { 
-    margin-left: auto;
-    margin-right: auto;  
-    font-size: 24px;
-}
+
 @media only screen and (max-width: 760px) {
     .banner-propos {
         width: 335px;
         height: 223px;
+        border-radius: 25px;
         object-fit: cover;
         background: url('../../../assets/propos-banner.png');
     }
@@ -36,9 +33,6 @@
         opacity: 0.3;
         background: rgb(0, 0, 0);
         mix-blend-mode: darken;  
-    }
-    .accordion-propos {
-        width: 335px;
     }
 } 
 

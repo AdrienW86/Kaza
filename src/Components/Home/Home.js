@@ -17,7 +17,7 @@ function Home() {
   return (
     <>  
       <Header/>
-        <main> 
+         
           <div className='list-card'>        
             {myData.map((item, index) => (           
               <Card    
@@ -29,7 +29,7 @@ function Home() {
               />
             ))} 
           </div>         
-        </main>       
+            
       <Footer/>        
     </>
   )

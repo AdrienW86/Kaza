@@ -18,7 +18,7 @@ function Accordion(props) {
             <img src={toggle ? `${ChevronClose}` : `${Chevron}`} alt="flèche pour ouvrir l'accordéon"></img>
         </div> 
         <div className={toggle ?  props.animated : props.toggle }>
-           <div className='accordion-toggle-text'
+           <div className={props.paragraphe}//'accordion-toggle-text'
                 aria-hidden={toggle ? "true" : "false"}>
                  <p className='accordion-txt'>{props.txt}  </p>             
           </div>

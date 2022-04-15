@@ -18,10 +18,10 @@ function Fiche() {
   let emptyStar = 5 - numberStar
    
   for(let i = 0; i < numberStar; i++) {    
-    ranking.push(<img src={PositiveStar} alt="positive-star"/>)
+    ranking.push(<img src={PositiveStar}  className='positive-star' alt="positive-star"/>)
     }  
   for(let i = 0; i < emptyStar; i++) { 
-    badRanking.push(<img src={NegativeStar} alt="negative-star"/>)
+    badRanking.push(<img src={NegativeStar} className='negative-star' alt="negative-star"/>)
   }
 
   return (
@@ -64,6 +64,7 @@ function Fiche() {
                      animated = {"fiche-animated"}
                      toggle = {"fiche-toggle"}
                      title={"Description"}
+                     paragraphe={"accordion-toggle-text"}
                      txt={itemData.description}
           />
         </div>   
@@ -73,6 +74,7 @@ function Fiche() {
                      animated = {"fiche-animated"}
                      toggle = {"fiche-toggle"}
                      title={"Equipements"}
+                     paragraphe={"accordion-toggle-text"}
                      txt={itemData.equipments.map((equipment,index) => {
               return <li key={index} className='equipment'>{equipment}</li>
             })}

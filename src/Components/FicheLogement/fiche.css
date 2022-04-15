@@ -1,12 +1,3 @@
-.lightbox-container {
-    width: 1240px;
-    height: 380px;;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
 .fiche-container {
     width: 1240px;
     margin-left: auto;
@@ -15,6 +6,20 @@
 .fiche {
     display: flex;
     justify-content: space-between;
+}
+.fiche-accordion-title {
+    display: flex;
+    background-color: rgba(255,96,96,1);
+    border-radius: 4px;
+    height: 52px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    width: 572px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .info {
     margin-top: 20px;
@@ -59,7 +64,6 @@
     justify-content: left;
     width: 200px; 
     margin-top: 20px;
-   
 }
 .star {
     display: flex;
@@ -83,15 +87,23 @@
     color: white;
     background: rgba(255, 96, 96, 1);
 }
-.description {
+.fiche-animated {
     display: flex;
-    justify-content: space-between ;
+    padding: 5px;
+    opacity: 1;
+    font-size: 12px;
+    pointer-events: none;
+    min-height: 249px;
+    line-height: 1.3;  
+    transition: 
+        height 0.2s ease-in-out, 
+        opacity 0.2s 0.2s ease-in-out;     
 }
-.accordion-description {
-    width: 582px;
-    position: relative;
-    padding: 0  
-}   
+.fiche-toggle {
+    opacity: 0;
+    height: 0px;
+    background: #f7f7f7;  
+}
 .accordion-fiche {
     width: 582px;
     display: flex; 
@@ -104,89 +116,98 @@
     color: rgba(255,96,96,1);
     background-color: #f7f7f7;
 }
-.fiche-accordion-title {
-    display: flex;
-    background-color: rgba(255,96,96,1);
-    border-radius: 4px;
-    height: 52px;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content : space-between;
-    align-items: center;
-    width: 572px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.accordion-toggle {
-    display: flex;
-}
-
-.accordion-toggle-text {
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 249px;
-}
-.fiche-animated {
-    display: flex;
-    padding: 5px;
-    opacity: 1;
-    height: 249px;
-    font-size: 12px;
-    pointer-events: none;
-    line-height: 1.3;  
-    transition: 
-        height 0.2s ease-in-out, 
-        opacity 0.2s 0.2s ease-in-out;     
-}
-.fiche-toggle {
-    opacity: 0;
-    height: 0px;
-    background: #f7f7f7;  
-}
 .equipment {
     list-style: none; 
 }
 
 @media only screen and (max-width: 760px) {
-   
     .fiche-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         width: 95%;
     }
-    .location-title {
-        font-size: 18px;
+        .fiche {
+            width: 335px;
+            display: flex;
+            justify-content: left;
+            margin-left: auto;
+            margin-right: auto;          
     }
-    .info {
-        display: flex;
-    }  
-    .picture_and_stars {
-       display: flex;
-       width: 90%;
-       height: 50px;
-       margin-left: 5%;
-       position: relative;
-       top: 30px;
-    }
-    .positive-star, .negative-star {
-        height: 15px;
-        width: 15px;
-    } 
+            .info {
+                display: flex;
+                position: relative;
+                bottom: 60px;
+            }  
+                .location-title {
+                    font-size: 18px;
+                }
+                .location {
+                    font-size: 14px;
+                }
+    
+            .picture_and_stars {
+                display: flex;
+                justify-content:right;
+                height: 80px;
+                width: 335px;
+                position: relative;
+                right: 380px;
+                top: 40px;
+               
+            }  
 
+        .description {
+            display: flex;
+            flex-direction: column;
+            width: 335px;  
+        }
+            .accordion-description {
+                display: flex;
+                height: auto;
+                width: 335px;
+            }
+                .accordion-fiche {
+                width: 335px;
+                margin-left: auto;
+                 margin-right: auto;
+                }
+                    .fiche-accordion-title {
+                        width: 325px;
+                        height: 29.93px;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        padding-left: 5px;
+                    }
+                    .fiche-animated {
+                        width: 335px;
+                        min-height: 143px;
+                    }
+                        .accordion-toggle-text {       
+                            opacity: 1;
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 5px;
+                            padding-right: 5px; 
+                            height: 143px;
+                        }
+                .location-owner {
+                    display: flex;
+                    position: relative;
+                    left: 140px; 
+                    top: 15px 
+                }
     .tag {
         background: #ff6060;
-        border-radius: 10px;
+        border-radius: 5px;
         color: #fff;
-        font-size: 14px;
+        font-size: 10px;
+        font-weight: 500, medium;
         margin-right: 10px;
         padding: 3px;
         text-align: center;
-        width: 115px;
+        width: 84px;
+        height: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -194,11 +215,14 @@
     .tag-container {
         margin-left: 0
     }
-
     .location-owner {
         display: flex;
         justify-content: flex-end ;
+        position: relative;
+        right: 100px;
         height: 50px;
+        width: 280px;
+        
     }
     .owner-picture {
         height: 32px;
@@ -211,21 +235,17 @@
         margin-bottom: 20px;
     }
     .star {
-        display:flex;
-        
+        height: 15px;
+        width: 150px;
+        display:flex;       
         position: relative;
-        bottom: 35px;
+        bottom :20px;
     }
-    .description {
-        display: flex;
-        flex-direction: column;  
-    }
-    .accordion-description {
-       display: flex;
-       height: auto;
-       width: 335px;
+    .positive-star, .negative-star {
+        height: 15px;
+        width: 15px;
     }
     .accordion-toggle {
         height: 0px;
-    }   
+    } 
 }
