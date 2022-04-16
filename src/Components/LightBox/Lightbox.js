@@ -31,30 +31,28 @@ function Lightbox(props) {
             lengthImages = true
         }
   return (
-    <>
-    <section className='lightbox-container'>
-        <button
-            onClick={prev} 
-            className= {lengthImages ? 'prev' : 'hidden'}>
-                <img className='prev-svg'
-                     src={ChevronLeft} 
-                     alt="previous"
-                />
-        </button>
-        <img className='lightbox'
-             src={images[current]} alt="photographie"
-        />
-        <button 
-            onClick={next} 
-            className= {lengthImages ? 'next' : 'hidden'}>
-                <img className='next-svg'  
-                     src={ChevronRight} 
-                     alt="next">
-                </img> 
-        </button>                         
-    </section>
+    <section className='lightbox'>
+    <button
+        onClick={prev} 
+        className= {lengthImages ? 'prev' : 'hidden'}>
+            <img className='prev-svg'
+                 src={ChevronLeft} 
+                 alt="previous"
+            />
+    </button>
+    <img className='lightbox-image'
+        src= {images[current]} alt='lightbox'>
+    </img>                      
+    <button 
+        onClick={next} 
+        className= {lengthImages ? 'next' : 'hidden'}>
+            <img className='next-svg'  
+                 src={ChevronRight} 
+                 alt="next">
+            </img> 
+    </button>  
     <div className='number-picture'> {currentNumber}/{images.length}</div>
-    </>
+    </section>
   )
 }
 export default Lightbox

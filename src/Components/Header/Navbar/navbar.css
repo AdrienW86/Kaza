@@ -1,5 +1,5 @@
 .nav {
-    width: 1240px;;
+    width: 1240px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 0;
@@ -34,9 +34,22 @@
     }
     .logo {
         height: 30px;
-        width: 105px;
+        width: 90px;
     }
     .link, .activeLink {
         font-size: 12px;
+    }
+}
+
+@media all and (min-width: 760px) and (max-width:1280px) {
+    .nav {
+        width: 750px;
+    }
+    .logo {
+        height: 70px;
+        width: 130px;
+    }
+    .link, .activeLink {
+        font-size: 22px;
     }
 }

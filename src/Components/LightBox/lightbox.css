@@ -1,31 +1,39 @@
-.lightbox-container {
+.lightbox {
+  display: flex;
+  justify-content: center;
+  height: 415px;
   width: 1240px;
-  height: 380px;;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
-.lightbox {
-    display: flex;
-    height: 415px;
-    width: 1240px;  
-    border-radius: 25px; 
-    position: relative;
-    bottom: 30px;
+.lightbox-image {
+  display: flex; 
+  position: relative;
+  left: 10px;
+  height: 415px;
+  min-width: 1240px;  
+  border-radius: 25px;  
+  margin: 0;
+  padding: 0 
+}
+.prev, .next {
+  height: 50px;
+  display: flex;
+  width: 40px;
+  background: transparent;
+  border: none;
+  z-index: 2
 }
 .prev {
   position: relative;
-  top: 230px;
-  background: transparent;
-  border: none
+  left: 70px;
+  top: 182.5px
 }
 .next {
   position: relative;
-  bottom: 240px;
-  left: 1153px;
-  background: transparent;
-  border: none
+  right: 50px;
+  top: 182.5px
 }
 .prev:hover, .next:hover {
     cursor: pointer
@@ -39,37 +47,35 @@
   display: none
 }
 .number-picture {
-  height: 30px;
+  display: flex;
   position: relative;
-  top: 30px;
+  top: 370px;
+  right: 670px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  height: 30px;
+  width: 30px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(254, 254, 254);
 }
 
 @media only screen and (max-width: 760px) {
-  .lightbox-container {
-    display: flex;
-    justify-content: center;
-    width: 335px;
-    height: 255px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .fiche-container {
-    width: 1240px;  
-  }
-  .description {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .lightbox {
     display: flex;
     justify-content: center;
     width: 335px;
     height: 255px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lightbox-image {
+    position: initial;
+    min-width: 335px;
+    height: 255px;
+    display: flex;
+    margin: 0;
+    padding: 0
   }
   .prev-svg, .next-svg {
     height: 19.8px;
@@ -78,21 +84,21 @@
   .number-picture {
     display: none;
   } 
+  .prev, .next { 
+    height: 30px;
+    display: flex;
+    width: 20px;
+    border: none;
+    background: transparent; 
+  }
   .prev {
-   position: relative;
-   height: 20px;
-   top: 80px;
-   left: 30px;
-   background: transparent;
-   z-index :45;
-    
+    position: relative;
+    left: 20px;
+    top: 117.5px
   }
   .next {
-    position: absolute ;
-    bottom:625px;
-    height: 20px;
-    left: 350px;
-    background:transparent;
-    z-index :45;
+    position: relative;
+    right: 20px;
+    top: 117.5px
   }
 }

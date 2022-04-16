@@ -75,3 +75,24 @@
         border-radius: 8px;
     }
 }
+
+@media all and (min-width: 760px) and (max-width:1280px) {
+    .list-card { 
+        width: 750px;
+    }
+    .card {
+        width: 330px;
+        height: 255px;
+    }
+    .cover, .profil-link {
+        width: 330px;
+        height: 255px;
+        margin-top: 0px
+    }
+    .card-title { 
+        font-size: 18px;
+        height: 52px; 
+        width: 295.59px;    
+        border-radius: 8px;
+    }
+}

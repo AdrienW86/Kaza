@@ -26,10 +26,8 @@ function Fiche() {
 
   return (
     <>
-      <Navbar/>
-      <main>
-        <Lightbox images = {itemData.pictures}></Lightbox>
-        <section className='fiche-container'>
+      <Navbar/>  
+        <Lightbox images = {itemData.pictures}> </Lightbox>        
           <section className='fiche'>
             <section className='info'>
               <div>
@@ -55,34 +53,34 @@ function Fiche() {
                 <p className='owner-name'> { itemData.host.name} </p>
                 <img className='owner-picture' src={ itemData.host.picture} alt="owner"/>       
               </div> 
-            </section>
-          </section>       
-        <section className='description'>
-        <div className='accordion-description'>
-          <Accordion class = {"accordion-fiche"}
-                     custom = {"fiche-accordion-title"}
-                     animated = {"fiche-animated"}
-                     toggle = {"fiche-toggle"}
-                     title={"Description"}
-                     paragraphe={"accordion-toggle-text"}
-                     txt={itemData.description}
-          />
-        </div>   
-        <div className='accordion-description'>
-          <Accordion class = {"accordion-fiche"}
-                     custom = {"fiche-accordion-title"}
-                     animated = {"fiche-animated"}
-                     toggle = {"fiche-toggle"}
-                     title={"Equipements"}
-                     paragraphe={"accordion-toggle-text"}
-                     txt={itemData.equipments.map((equipment,index) => {
-              return <li key={index} className='equipment'>{equipment}</li>
-            })}
-          />
-        </div> 
-      </section> 
-      </section> 
-      </main>
+            </section>             
+            <section className='description'>
+              <div className='accordion-description'>
+                <Accordion 
+                  class = {"accordion-fiche"}
+                  custom = {"fiche-accordion-title"}
+                  animated = {"fiche-animated"}
+                  toggle = {"fiche-toggle"}
+                  title={"Description"}
+                  paragraphe={"accordion-toggle-text"}
+                  txt={itemData.description}
+                />
+              </div>   
+              <div className='accordion-description'>
+                <Accordion 
+                  class = {"accordion-fiche"}
+                  custom = {"fiche-accordion-title"}
+                  animated = {"fiche-animated"}
+                  toggle = {"fiche-toggle"}
+                  title={"Equipements"}
+                  paragraphe={"accordion-toggle-text"}
+                  txt={itemData.equipments.map((equipment,index) => {
+                    return <li key={index} className='equipment'>{equipment}</li>
+                  })}
+                />
+              </div> 
+            </section> 
+          </section> 
       <Footer/>
     </>
   )

@@ -60,3 +60,9 @@ h1.title {
         color: white; 
     }
 }
+
+@media all and (min-width: 760px) and (max-width:1280px) {
+    .banner-home {
+        width: 750px;
+    }
+}

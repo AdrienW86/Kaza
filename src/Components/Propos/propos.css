@@ -81,3 +81,17 @@
         width: 335px;
     }
 }
+
+@media all and (min-width: 760px) and (max-width:1280px) {
+    .propos-container, .accordion-propos {
+        width: 750px;
+    }
+    .propos-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accordion-visible {
+        width: 740px;
+        font-size: 16px;
+    }
+}

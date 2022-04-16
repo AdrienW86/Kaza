@@ -5,6 +5,10 @@
 }
 .fiche {
     display: flex;
+    flex-direction: column;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
 }
 .fiche-accordion-title {
@@ -22,7 +26,6 @@
     padding-right: 5px;
 }
 .info {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,7 +47,7 @@
     justify-content: flex-end;
 }
 .owner-name {
-    width: 93px;
+    width: 71px;
     height: 52px;
     margin-right: 15px;
     font-size: 18px;
@@ -62,8 +65,10 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: left;
+    position: relative;
+    bottom: 140px; 
+    left: 1037px;
     width: 200px; 
-    margin-top: 20px;
 }
 .star {
     display: flex;
@@ -74,7 +79,6 @@
     width: 30px;
 }
 .tag-container {
-    margin-left: 0%;
     display: flex;
 }
 .tag {
@@ -86,6 +90,12 @@
     text-align: center;
     color: white;
     background: rgba(255, 96, 96, 1);
+}
+.description {
+    display: flex;
+    position: relative;
+    bottom: 140px;
+    
 }
 .fiche-animated {
     display: flex;
@@ -135,32 +145,27 @@
             margin-right: auto;          
     }
             .info {
-                display: flex;
-                position: relative;
-                bottom: 60px;
+                display: flex;              
             }  
                 .location-title {
                     font-size: 18px;
                 }
                 .location {
                     font-size: 14px;
-                }
-    
+                }  
             .picture_and_stars {
                 display: flex;
-                justify-content:right;
-                height: 80px;
                 width: 335px;
-                position: relative;
-                right: 380px;
-                top: 40px;
-               
+                position: inherit;
+                bottom: 121px;
+                height: 40px;
             }  
 
         .description {
             display: flex;
             flex-direction: column;
             width: 335px;  
+            position: initial;
         }
             .accordion-description {
                 display: flex;
@@ -190,13 +195,7 @@
                             padding-left: 5px;
                             padding-right: 5px; 
                             height: 143px;
-                        }
-                .location-owner {
-                    display: flex;
-                    position: relative;
-                    left: 140px; 
-                    top: 15px 
-                }
+                        }            
     .tag {
         background: #ff6060;
         border-radius: 5px;
@@ -212,17 +211,13 @@
         justify-content: center;
         align-items: center;
     }
-    .tag-container {
-        margin-left: 0
-    }
     .location-owner {
         display: flex;
-        justify-content: flex-end ;
-        position: relative;
-        right: 100px;
-        height: 50px;
-        width: 280px;
-        
+        left: 100px;
+        width: 327px;
+        height: 9px;
+        position: initial;
+        margin: 6px
     }
     .owner-picture {
         height: 32px;
@@ -232,14 +227,15 @@
     .owner-name {
         font-size: 12px;
         width: 50px;
-        margin-bottom: 20px;
+        
     }
     .star {
-        height: 15px;
-        width: 150px;
-        display:flex;       
-        position: relative;
-        bottom :20px;
+        height: 30px;
+        width: 135px;
+        display:flex;
+        justify-content: flex-start;
+           
+        
     }
     .positive-star, .negative-star {
         height: 15px;
@@ -248,4 +244,56 @@
     .accordion-toggle {
         height: 0px;
     } 
+}
+
+@media all and (min-width: 760px) and (max-width:1280px) {
+    .lightbox, .lightbox-image,.fiche, .accordion-fiche {
+        width : 750px;
+        min-width: 750px;
+    }
+    .number-picture {
+        position: relative;
+        right: 340px;
+    }
+    .picture_and_stars {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        position: relative;
+        bottom: 140px; 
+        left: 547px;
+        width: 200px; 
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .accordion-description {
+        width: 750px;
+        display: flex;
+        justify-content: center;
+    }
+    .location-title {
+        font-size: 28px;
+        width: 400px;
+    }
+    .star {
+        position: relative;
+        bottom: 17px;
+    }
+    .positive-star, .negative-star {
+        width: 20px;
+        height: 20px;
+    }
+    .accordion-fiche, .accordion-txt {
+        font-size: 14px;
+    }
+    .fiche-animated {
+        min-height: auto;
+    }
+    .fiche-accordion-title {
+        width: 740px;
+    }
 }
