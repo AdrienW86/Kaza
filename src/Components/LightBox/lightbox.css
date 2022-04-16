@@ -10,6 +10,7 @@
 .lightbox-image {
   display: flex; 
   position: relative;
+  object-fit: cover;
   left: 10px;
   height: 415px;
   min-width: 1240px;  

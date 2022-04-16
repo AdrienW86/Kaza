@@ -226,16 +226,13 @@
     }
     .owner-name {
         font-size: 12px;
-        width: 50px;
-        
+        width: 50px;       
     }
     .star {
         height: 30px;
         width: 135px;
         display:flex;
-        justify-content: flex-start;
-           
-        
+        justify-content: flex-start;       
     }
     .positive-star, .negative-star {
         height: 15px;
@@ -246,14 +243,14 @@
     } 
 }
 
-@media all and (min-width: 760px) and (max-width:1280px) {
+@media all and (min-width: 761px) and (max-width:1280px) {
     .lightbox, .lightbox-image,.fiche, .accordion-fiche {
         width : 750px;
         min-width: 750px;
     }
     .number-picture {
         position: relative;
-        right: 340px;
+        right: 410px;
     }
     .picture_and_stars {
         display: flex;
