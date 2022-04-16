@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/kaza/static/css/main.ef713793.css",
-    "main.js": "/kaza/static/js/main.59286b26.js",
+    "main.css": "/kaza/static/css/main.5bdca5fb.css",
+    "main.js": "/kaza/static/js/main.5dbd84b6.js",
     "static/media/propos-banner.png": "/kaza/static/media/propos-banner.0c5ab2744fc9b4531788.png",
-    "static/media/banner-desktop.jpg": "/kaza/static/media/banner-desktop.f14f9d0f3cb1fbd80f48.jpg",
+    "static/media/IMG.jpg": "/kaza/static/media/IMG.8dbc3e4ffb4f7b0b3bc8.jpg",
     "static/media/banner.jpg": "/kaza/static/media/banner.50435afb0c9b28aa2d49.jpg",
     "static/media/logo-white.svg": "/kaza/static/media/logo-white.e5f5cf2202cf032f8241c0c09ffbe58b.svg",
     "static/media/logo.svg": "/kaza/static/media/logo.49c612c6c37d5bc000c6a65373bd1051.svg",
@@ -14,11 +14,11 @@
     "static/media/chevron-left.svg": "/kaza/static/media/chevron-left.3060b91b1089d858005b783dedce6b87.svg",
     "static/media/negative-star.svg": "/kaza/static/media/negative-star.7e4ba6032d7d80ecc30aa389973cef95.svg",
     "static/media/positive-star.svg": "/kaza/static/media/positive-star.6430150c126a3adf92c132c52c9c7428.svg",
-    "main.ef713793.css.map": "/kaza/static/css/main.ef713793.css.map",
-    "main.59286b26.js.map": "/kaza/static/js/main.59286b26.js.map"
+    "main.5bdca5fb.css.map": "/kaza/static/css/main.5bdca5fb.css.map",
+    "main.5dbd84b6.js.map": "/kaza/static/js/main.5dbd84b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef713793.css",
-    "static/js/main.59286b26.js"
+    "static/css/main.5bdca5fb.css",
+    "static/js/main.5dbd84b6.js"
   ]
 }
