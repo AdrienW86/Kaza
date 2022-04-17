@@ -7,6 +7,7 @@ import Footer from '../../Components/Footer/Footer';
 import PositiveStar from '../../assets/positive-star.svg';
 import NegativeStar from '../../assets/negative-star.svg'
 import './fiche.css'
+import Notfound from '../NotFound/Notfound';
 
 function Fiche() {
   const params = useParams()
@@ -84,7 +85,7 @@ function Fiche() {
           </>
         )
     }else{
-      window.location.href = "/*"
+      return(<Notfound/>)
     }
 }
 export default Fiche
