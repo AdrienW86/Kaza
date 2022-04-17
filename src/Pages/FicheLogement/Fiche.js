@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import data from '../../data.json';
-import Navbar from '../Header/Navbar/Navbar';
-import Lightbox from '../LightBox/Lightbox';
-import Accordion from '../Accordion/Accordion'
-import Footer from '../Footer/Footer';
+import Navbar from '../../Components/Header/Navbar/Navbar';
+import Lightbox from '../../Components/LightBox/Lightbox';
+import Accordion from '../../Components/Accordion/Accordion'
+import Footer from '../../Components/Footer/Footer';
 import PositiveStar from '../../assets/positive-star.svg';
 import NegativeStar from '../../assets/negative-star.svg'
 import './fiche.css'
@@ -11,7 +11,6 @@ import './fiche.css'
 function Fiche() {
   const params = useParams()
   const itemData = data.find((item) => item.id === params.id)
-
   let ranking = []
   let badRanking = []
   let numberStar = parseInt(itemData.rating)

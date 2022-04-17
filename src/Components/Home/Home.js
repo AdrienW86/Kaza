@@ -9,7 +9,6 @@ function Home() {
   const getData = () => {
     setData(data)
   }
-
   useEffect(() => {
     getData()
   },[])

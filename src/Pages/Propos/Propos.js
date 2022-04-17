@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Accordion from '../Accordion/Accordion';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
+import Accordion from '../../Components/Accordion/Accordion';
 import './propos.css';
 
 function Propos() {
