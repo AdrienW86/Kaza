@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom' ;
 import './card.css';
 
 function Card(props) {
-  return (  
-             
+  return (              
     <Link 
       className='profil-link' 
       to={`/fiche/${props.id}/`}

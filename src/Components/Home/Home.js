@@ -17,7 +17,6 @@ function Home() {
   return (
     <>  
       <Header/>
-         
           <div className='list-card'>        
             {myData.map((item, index) => (           
               <Card    
@@ -28,8 +27,7 @@ function Home() {
                 id = {item.id}
               />
             ))} 
-          </div>         
-            
+          </div>             
       <Footer/>        
     </>
   )

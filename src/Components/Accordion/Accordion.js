@@ -10,15 +10,14 @@ function Accordion(props) {
     }
    
   return (   
-    <section className={props.class} //'accordion'
-    >
-        <div className={props.custom} //'accordion-visible'
+    <section className={props.class} >
+        <div className={props.custom} 
              onClick={toogleState}>
             <h2> {props.title} </h2>
             <img src={toggle ? `${ChevronClose}` : `${Chevron}`} alt="flèche pour ouvrir l'accordéon"></img>
         </div> 
         <div className={toggle ?  props.animated : props.toggle }>
-           <div className={props.paragraphe}//'accordion-toggle-text'
+           <div className={'accordion-toggle-text'} 
                 aria-hidden={toggle ? "true" : "false"}>
                  <p className='accordion-txt'>{props.txt}  </p>             
           </div>
